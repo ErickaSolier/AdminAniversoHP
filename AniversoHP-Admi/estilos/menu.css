@@ -1,0 +1,206 @@
+*, *:after, *:before {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.blue {
+  background: rgba(54, 54, 54, 1);
+  color: #fff;
+}
+.navbar {
+  padding: 10px 10%;
+}
+#logo {
+  display: inline-block;
+  margin-top: 7px;
+  color: #fff;
+}
+#link {
+  color: #fff;
+  font-weight: bold;
+  margin: 0 10px;
+}
+span { margin: 0 7px; }
+#sidebarCollapse {
+  color: #fff;
+  background: transparent;
+  outline: none;
+  margin: 0 10px;
+}
+#sidebarCollapse:hover {
+  color: rgb(0, 0, 0);
+  background: #fff;
+  outline: none;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}#sidebar {
+    min-width: 250px;
+    max-width: 400px;
+    margin-top: 70px;
+    background: rgba(11, 13, 23, 1);
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar.active{
+	margin-left: -250px;
+}
+
+#sidebar .sidebar-header{
+	padding: 20px;
+	background: rgba(255, 194, 33, 1);
+}
+#sidebar ul.components{
+	padding: 20px 0px;
+}
+#sidebar ul p{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+#sidebar ul li{
+  display: block;
+  position:relative;
+}
+#sidebar ul li a{
+	padding: 10px 10px 10px 20px;
+	font-size: 1.1em;
+	display: block;
+  color: #fff;
+  font-weight: bold;
+}
+#sidebar ul li a:hover {
+    color:rgba(147, 231, 180, 1);
+    background: #fff;
+    text-decoration: none;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: rgba(255, 194, 33, 1);
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#content {
+    width: 100%;
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    margin-top: 70px;
+}
+#sidebar ul li:hover .children{
+  display:block;
+}
+#sidebar ul li .children{
+  display:none;
+  background:rgb(131, 126, 126);
+  position:absolute;
+  width: 150%;
+  z-index:1000;
+}
+#sidebar ul li .children li{
+  display:block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+#sidebar ul li .children li a{
+  display: block; 
+}
+#sidebar ul li .children li a span{
+  float:right; 
+  position: relative;
+  top:3px;
+  margin-right: 0;
+  margin-left:10px;
+}
+#sidebar ul li .caret{
+  position: relative;
+  top:3px;
+  margin-left:10px;
+  margin-right: 0px;
+}
+@media (max-width:800px) {
+  #sidebar {
+    margin-left: -250px;}
+  #sidebar.active{
+	margin-left: 0px;
+  }
+  #sidebarCollapse span{
+	display: none;
+  }
+  .card {
+    width:100%;
+  }
+}
+@media (max-width:400px) {
+  #sidebar {
+    margin-top: -20px;
+  }
+  #logo {
+    display: none;
+  }
+}
+h3{
+  text-align:center;
+  color:black;
+}
+h5{
+  text-align:center;
+  color:black;
+}
+.foto{
+  width:50%;
+  height:50%;
+  border-radius:50px;
+}
+input[type=submit]{
+  width: 80%;
+	font-size:1em;
+  border-radius: 24px;
+  text-align:center;
+  background-color: rgba(147, 231, 180, 1);
+  color:black;
+  cursor:pointer;
+}
+.logo-menu{
+  width:80%;
+  height:20%; 
+}*/
+#sidebar ul li:hover .children{
+  display:none;
+}
+#sidebar ul li .children{
+  width:100%;
+  position:relative;
+  display: none;
+}
+#sidebar ul li .children li a{
+  margin-left:20px;
+}
+#sidebar ul li .caret{
+  float: right;
+}
+.fondo{
+  width:100%;
+  height: 400px;
+}
+.contorno{
+  border-color:red;
+}
+#Salir{
+  outline: none;
+  background-color:white;
+
+}
